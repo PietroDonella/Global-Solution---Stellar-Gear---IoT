@@ -8,7 +8,7 @@ O sistema é dividido em três camadas principais: **Edge** (Captura e atuação
 
 ### 🔌 Entradas (Sensores)
 * **Sensor DHT22:** Monitoramento em tempo real da temperatura (°C) e umidade relativa (%) do interior do traje espacial.
-* **Potenciômetro:** Atuando como um simulador de sensor de batimentos cardíacos (BPM), mapeando valores analógicos para uma escala fisiológica realista (40 a 160 BPM).
+* **Potenciômetro:** Atuando como um simulador de sensor de batimentos cardíacos (BPM), mapeando valores analógicos para uma escala fisiológica realista (40 a 160 BPM) (Usado por limitações dos sensores no Wokwi).
 * **Pushbutton (Botão de Pânico):** Acionamento manual de emergência médica pelo turista.
 
 ### 💡 Saídas (Atuadores e Interface)
@@ -74,7 +74,3 @@ Todos os arquivos fonte estão disponíveis neste repositório. Siga os passos a
 * `sketch.ino`: Firmware C++ do ESP32.
 * `diagram.json`: Estrutura de ligação elétrica para o Wokwi.
 * `flow.json`: Código de nós para importação na plataforma Node-RED.
-
-    diagram.json: Estrutura de ligação elétrica para o Wokwi.
-
-    flow.json: Código de nós para importação na plataforma Node-RED.# Global-Solution---Stellar-Gear---IoT
