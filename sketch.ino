@@ -13,8 +13,8 @@ const char* password = "";
 // Configurações do HiveMQ Cloud Privado
 const char* mqtt_server = "4ffe8925948f46d5883ca30dad59a71f.s1.eu.hivemq.cloud";
 const int mqtt_port = 8883;
-const char* mqtt_user = "user1"; // <-- ALTERE AQUI
-const char* mqtt_pass = "Fiapiot2026"; // <-- ALTERE AQUI
+const char* mqtt_user = "user1"; 
+const char* mqtt_pass = "Fiapiot2026"; 
 
 // Instancia o cliente seguro
 WiFiClientSecure espClient;
@@ -59,7 +59,6 @@ void setup() {
 
   setup_wifi();
   
-  // Ignora a validação do certificado SSL (ideal para simulações acadêmicas)
   espClient.setInsecure(); 
   
   client.setServer(mqtt_server, mqtt_port);
